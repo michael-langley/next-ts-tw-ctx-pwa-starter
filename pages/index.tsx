@@ -1,7 +1,12 @@
 import React from 'react';
+import HomeComponent from '../components/HomeComponent';
 
 const LandingPage = () => {
-  return <div className="text-xl text-red-600 font-semibold">Welcome to your App</div>;
+  return (
+    <div data-testid='landing-page'>
+      <HomeComponent message='Welcome to the home page of the App' />
+    </div>
+  );
 };
 
 export default LandingPage;
